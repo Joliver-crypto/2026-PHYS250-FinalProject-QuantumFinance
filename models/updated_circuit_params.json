@@ -1,0 +1,353 @@
+{
+  "created_at": "2026-05-14T06:02:28+00:00",
+  "num_layers": 1,
+  "parameter_count": 34,
+  "feature_columns": [
+    "q0_overall_intensity",
+    "q1_geo_macro_score",
+    "q2_disaster_disruption_score",
+    "q3_technology_adoption_score",
+    "q4_regulation_policy_score"
+  ],
+  "label_columns": [
+    "usd_up",
+    "gold_up",
+    "sp500_up",
+    "btc_up"
+  ],
+  "asset_bitstring_order": "USD,Gold,SP500,BTC",
+  "optimizer": "COBYLA",
+  "maxiter": 80,
+  "seed": 7,
+  "lambda_joint": 0.1,
+  "lambda_l2": 0.001,
+  "temporal_cutoff": "2026-04-20",
+  "temporal_rows_excluded_after_load": 0,
+  "optimization_success": false,
+  "optimizer_message": "Maximum number of function evaluations has been exceeded.",
+  "objective_evaluations": 80,
+  "final_loss": 0.937743722345042,
+  "parameter_vector": [
+    1.8050075623226494,
+    1.9625293399971282,
+    2.301707380502077,
+    1.1228148470780543,
+    2.7069086308161086,
+    1.9011765986602465,
+    1.0598275127214116,
+    1.6971758692801284,
+    2.818873414624287,
+    1.6959773063218324,
+    1.6952169389205265,
+    1.4526776092910942,
+    2.734718819635108,
+    1.69347846028743,
+    2.2780495078938183,
+    2.5987391922079444,
+    2.8154066166676897,
+    1.566131104405008,
+    1.0487844139665685,
+    1.4231929244502153,
+    3.0051656004230125,
+    2.572880177556462,
+    1.9362476772011497,
+    1.7132689104619292,
+    2.3466345712310814,
+    1.5765586514560284,
+    1.8443755284449277,
+    1.6276331106384714,
+    1.4488089041862664,
+    2.5285936309266472,
+    1.827258747302695,
+    2.039079414701322,
+    2.6628841136821166,
+    1.32044790873565
+  ],
+  "train_metrics": {
+    "status": "ok",
+    "metrics": {
+      "per_label": [
+        {
+          "label": "USD",
+          "bce_log_loss": 0.6926880890296286,
+          "brier_score": 0.24971504562677466,
+          "accuracy": 0.5428571428571428,
+          "mean_predicted_probability": 0.4590237038386538
+        },
+        {
+          "label": "Gold",
+          "bce_log_loss": 0.6507063733481624,
+          "brier_score": 0.22917054681796267,
+          "accuracy": 0.6357142857142857,
+          "mean_predicted_probability": 0.6280511991531181
+        },
+        {
+          "label": "SP500",
+          "bce_log_loss": 0.6423042870305654,
+          "brier_score": 0.2241437069122319,
+          "accuracy": 0.6785714285714286,
+          "mean_predicted_probability": 0.6620574740743637
+        },
+        {
+          "label": "BTC",
+          "bce_log_loss": 0.6954881389825135,
+          "brier_score": 0.2511726793756968,
+          "accuracy": 0.45714285714285713,
+          "mean_predicted_probability": 0.48687611138087467
+        }
+      ],
+      "mean": {
+        "bce_log_loss": 0.6702967220977175,
+        "brier_score": 0.23855049468316653,
+        "accuracy": 0.5785714285714285
+      }
+    },
+    "joint_nll": 2.6328768978631385
+  },
+  "val_metrics": {
+    "status": "ok",
+    "metrics": {
+      "per_label": [
+        {
+          "label": "USD",
+          "bce_log_loss": 0.6692863632903108,
+          "brier_score": 0.23817389167772327,
+          "accuracy": 0.6333333333333333,
+          "mean_predicted_probability": 0.46629040893053203
+        },
+        {
+          "label": "Gold",
+          "bce_log_loss": 0.6559717095184648,
+          "brier_score": 0.23121179785494755,
+          "accuracy": 0.6666666666666666,
+          "mean_predicted_probability": 0.6345843744318203
+        },
+        {
+          "label": "SP500",
+          "bce_log_loss": 0.8537372091506176,
+          "brier_score": 0.3208093223851406,
+          "accuracy": 0.4666666666666667,
+          "mean_predicted_probability": 0.6801848462785363
+        },
+        {
+          "label": "BTC",
+          "bce_log_loss": 0.706975516499934,
+          "brier_score": 0.25687927135171684,
+          "accuracy": 0.4666666666666667,
+          "mean_predicted_probability": 0.4803952913967896
+        }
+      ],
+      "mean": {
+        "bce_log_loss": 0.7214926996148318,
+        "brier_score": 0.26176857081738203,
+        "accuracy": 0.5583333333333333
+      }
+    },
+    "joint_nll": 2.731659821893828
+  },
+  "test_metrics": {
+    "status": "ok",
+    "metrics": {
+      "per_label": [
+        {
+          "label": "USD",
+          "bce_log_loss": 0.7287879987767217,
+          "brier_score": 0.26750977016755967,
+          "accuracy": 0.4666666666666667,
+          "mean_predicted_probability": 0.46449564415735806
+        },
+        {
+          "label": "Gold",
+          "bce_log_loss": 0.8940507221303959,
+          "brier_score": 0.3473958601508176,
+          "accuracy": 0.2,
+          "mean_predicted_probability": 0.6276630846620167
+        },
+        {
+          "label": "SP500",
+          "bce_log_loss": 0.6077732053998497,
+          "brier_score": 0.20590105020462462,
+          "accuracy": 0.7666666666666667,
+          "mean_predicted_probability": 0.667926882947852
+        },
+        {
+          "label": "BTC",
+          "bce_log_loss": 0.7121481400445716,
+          "brier_score": 0.2594664168155353,
+          "accuracy": 0.43333333333333335,
+          "mean_predicted_probability": 0.48487054437034344
+        }
+      ],
+      "mean": {
+        "bce_log_loss": 0.7356900165878848,
+        "brier_score": 0.2700682743346343,
+        "accuracy": 0.46666666666666673
+      }
+    },
+    "joint_nll": 2.8999367820392146
+  },
+  "baseline_metrics": {
+    "independent_bernoulli": {
+      "val": {
+        "status": "ok",
+        "metrics": [
+          {
+            "label": "USD",
+            "bce_log_loss": 0.6583858995735193,
+            "brier_score": 0.23270408163265305,
+            "accuracy": 0.6666666666666666,
+            "mean_predicted_probability": 0.4357142857142856
+          },
+          {
+            "label": "Gold",
+            "bce_log_loss": 0.6386096318797692,
+            "brier_score": 0.22318027210884353,
+            "accuracy": 0.6666666666666666,
+            "mean_predicted_probability": 0.6357142857142858
+          },
+          {
+            "label": "SP500",
+            "bce_log_loss": 0.786279878651548,
+            "brier_score": 0.2937925170068027,
+            "accuracy": 0.4666666666666667,
+            "mean_predicted_probability": 0.6785714285714283
+          },
+          {
+            "label": "BTC",
+            "bce_log_loss": 0.695704730893331,
+            "brier_score": 0.25127551020408156,
+            "accuracy": 0.5,
+            "mean_predicted_probability": 0.5357142857142859
+          }
+        ],
+        "mean_metrics": {
+          "bce_log_loss": 0.6947450352495418,
+          "brier_score": 0.2502380952380952,
+          "accuracy": 0.575
+        }
+      },
+      "test": {
+        "status": "ok",
+        "metrics": [
+          {
+            "label": "USD",
+            "bce_log_loss": 0.7359580960616324,
+            "brier_score": 0.27127551020408164,
+            "accuracy": 0.36666666666666664,
+            "mean_predicted_probability": 0.4357142857142856
+          },
+          {
+            "label": "Gold",
+            "bce_log_loss": 0.8984546424834154,
+            "brier_score": 0.34984693877551015,
+            "accuracy": 0.2,
+            "mean_predicted_probability": 0.6357142857142858
+          },
+          {
+            "label": "SP500",
+            "bce_log_loss": 0.5621155581024818,
+            "brier_score": 0.1866496598639455,
+            "accuracy": 0.7666666666666667,
+            "mean_predicted_probability": 0.6785714285714283
+          },
+          {
+            "label": "BTC",
+            "bce_log_loss": 0.6718545902865519,
+            "brier_score": 0.23937074829931965,
+            "accuracy": 0.6666666666666666,
+            "mean_predicted_probability": 0.5357142857142859
+          }
+        ],
+        "mean_metrics": {
+          "bce_log_loss": 0.7170957217335204,
+          "brier_score": 0.26178571428571423,
+          "accuracy": 0.5
+        }
+      }
+    },
+    "logistic_regression": {
+      "val": {
+        "status": "ok",
+        "metrics": [
+          {
+            "label": "USD",
+            "bce_log_loss": 0.6844128257740342,
+            "brier_score": 0.24571254281595015,
+            "accuracy": 0.5666666666666667,
+            "mean_predicted_probability": 0.43606059841785516
+          },
+          {
+            "label": "Gold",
+            "bce_log_loss": 0.6749155745129624,
+            "brier_score": 0.24033738895810036,
+            "accuracy": 0.6333333333333333,
+            "mean_predicted_probability": 0.6406103240694031
+          },
+          {
+            "label": "SP500",
+            "bce_log_loss": 0.7927861439977716,
+            "brier_score": 0.29651873140300594,
+            "accuracy": 0.4666666666666667,
+            "mean_predicted_probability": 0.6702618079960263
+          },
+          {
+            "label": "BTC",
+            "bce_log_loss": 0.7215412636638001,
+            "brier_score": 0.2631365801553531,
+            "accuracy": 0.5333333333333333,
+            "mean_predicted_probability": 0.5235776564235552
+          }
+        ],
+        "mean_metrics": {
+          "bce_log_loss": 0.718413951987142,
+          "brier_score": 0.2614263108331024,
+          "accuracy": 0.5499999999999999
+        }
+      },
+      "test": {
+        "status": "ok",
+        "metrics": [
+          {
+            "label": "USD",
+            "bce_log_loss": 0.703318283026722,
+            "brier_score": 0.25501856471090834,
+            "accuracy": 0.4666666666666667,
+            "mean_predicted_probability": 0.4370918403402943
+          },
+          {
+            "label": "Gold",
+            "bce_log_loss": 0.8974384097297712,
+            "brier_score": 0.3482053408798558,
+            "accuracy": 0.23333333333333334,
+            "mean_predicted_probability": 0.6320253796624389
+          },
+          {
+            "label": "SP500",
+            "bce_log_loss": 0.5488499560087636,
+            "brier_score": 0.18107833344187854,
+            "accuracy": 0.7666666666666667,
+            "mean_predicted_probability": 0.6754940268811764
+          },
+          {
+            "label": "BTC",
+            "bce_log_loss": 0.6553380130393285,
+            "brier_score": 0.23142149640687665,
+            "accuracy": 0.6666666666666666,
+            "mean_predicted_probability": 0.5409444852135318
+          }
+        ],
+        "mean_metrics": {
+          "bce_log_loss": 0.7012361654511463,
+          "brier_score": 0.2539309338598798,
+          "accuracy": 0.5333333333333333
+        }
+      }
+    }
+  },
+  "notes": [
+    "Small dataset.",
+    "Seed events are auto-labeled and recalibrated deterministically.",
+    "Not a production trading model.",
+    "No claim of quantum advantage."
+  ]
+}

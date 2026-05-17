@@ -1,0 +1,17 @@
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Notebook outputs (regenerated on run)
+figures/
+data/model_prediction_correctness.csv
+data/holdout_eval_report_notebook.md
+
+# OS / editor
+.DS_Store
+.matplotlib_cache/
